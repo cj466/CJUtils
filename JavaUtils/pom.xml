@@ -11,5 +11,8 @@
 
     <artifactId>JavaUtils</artifactId>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>
