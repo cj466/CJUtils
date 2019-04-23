@@ -46,7 +46,7 @@ public class Demo01 {
             System.out.println(files[0].isFile() ? "files[0]的是文件" : "files[0]的不是文件");
             System.out.println(files[0].isAbsolute() ? "files[0]的路径名是绝对路径" : "files[0]的路径名不是绝对路径");
 
-            // 删除为delete
+            // 删除为delete()
         }
     }
 }
