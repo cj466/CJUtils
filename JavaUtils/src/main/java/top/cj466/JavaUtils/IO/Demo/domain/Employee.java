@@ -3,6 +3,8 @@ package top.cj466.JavaUtils.IO.Demo.domain;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @ClassName Employee
  * @Description TODO
@@ -13,7 +15,7 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-public class Employee {
+public class Employee implements Serializable {
 
     private String name;
     private int age;
