@@ -13,7 +13,7 @@ import java.io.RandomAccessFile;
  * @Version 1.0
  * @Since JDK 1.8
  */
-public class Demo02 {
+public class RandomAccessFileDemo {
 
     public static void main(String[] args) throws Exception {
         Employee zhangsan = new Employee("zhangsan", 23);

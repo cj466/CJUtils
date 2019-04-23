@@ -12,7 +12,7 @@ import java.util.Date;
  * @Version 1.0
  * @Since JDK 1.8
  */
-public class Demo01 {
+public class FileDemo {
 
     public static void main(String[] args) {
         String fileName = "D:" + File.separator + "响应式编程资料";
