@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * @ClassName Demo01
- * @Description TODO File类中的方法
+ * @Description TODO File类使用实例
  * @Author w
  * @Date 2019/4/23 15:24
  * @Version 1.0
