@@ -13,7 +13,8 @@ public class MyThread01 extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
-            System.out.println(Thread.currentThread().getName() + "在运行！");
+            //System.out.println(Thread.currentThread().getName() + "在运行！");
+            System.out.print("10");
         }
     }
 }

@@ -15,6 +15,14 @@ import java.util.concurrent.FutureTask;
 public class ThreadTest {
 
     @Test
+    public void test() throws Exception {
+        for (int i = 0; i < 5; i++) {
+            new MyThread01().start();
+        }
+        Thread.sleep(1000);
+    }
+
+    @Test
     public void test01() throws Exception {
         for (int i = 0; i < 5; i++) {
             System.out.println(Thread.currentThread().getName() + "在运行！");
