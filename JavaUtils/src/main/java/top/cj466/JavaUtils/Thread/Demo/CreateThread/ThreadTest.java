@@ -17,9 +17,12 @@ public class ThreadTest {
     @Test
     public void test() throws Exception {
         for (int i = 0; i < 5; i++) {
-            new MyThread01().start();
+            MyThread01 thread01 = new MyThread01();
+            thread01.start();
+            thread01.join();
+            // join()方法通常由使用线程的程序调用，以将大问题划分成许多小问题，每个小问题分配一个线程。
+            // 当所有的小问题都得到处理后，再调用主线程来进一步操作。
         }
-        Thread.sleep(1000);
     }
 
     @Test
