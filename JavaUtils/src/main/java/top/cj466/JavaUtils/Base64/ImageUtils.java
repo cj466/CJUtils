@@ -42,7 +42,7 @@ public class ImageUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-// 对字节数组Base64编码
+        // 对字节数组Base64编码
         BASE64Encoder encoder = new BASE64Encoder();
         return encoder.encode(outputStream.toByteArray());// 返回Base64编码过的字节数组字符串
     }
@@ -64,7 +64,7 @@ public class ImageUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-// 对字节数组Base64编码
+        // 对字节数组Base64编码
         BASE64Encoder encoder = new BASE64Encoder();
         return encoder.encode(outputStream.toByteArray());// 返回Base64编码过的字节数组字符串
     }
