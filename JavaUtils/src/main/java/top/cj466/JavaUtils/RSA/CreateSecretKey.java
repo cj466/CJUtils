@@ -38,7 +38,6 @@ public class CreateSecretKey {
         return encryptBASE64(key.getEncoded());
     }
 
-
     //获得私钥字符串
     public static String getPrivateKeyStr(Map<String, Object> keyMap) throws Exception {
         //获得map中的私钥对象 转为key对象
@@ -162,7 +161,7 @@ public class CreateSecretKey {
     public static void main(String[] args) {
         Map<String, Object> keyMap;
         byte[] cipherText;
-        String input = "Hello World!";
+        String input = "Hello World";
         try {
             keyMap = initKey();
             String publicKey = getPublicKeyStr(keyMap);

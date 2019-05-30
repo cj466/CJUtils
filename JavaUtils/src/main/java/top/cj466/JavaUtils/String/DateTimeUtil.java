@@ -1,7 +1,11 @@
 package top.cj466.JavaUtils.String;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 /**
  * 日期格式化工具类
@@ -19,5 +23,12 @@ public class DateTimeUtil {
         String strDate2 = dtf2.format(dateTime);
 
         return strDate2;
+    }
+
+    public static void main(String[] args) {
+        Date date = new Date();
+        String dateStr =  JSON.toJSONString(date, SerializerFeature.WriteDateUseDateFormat);
+        String dateStr2 =  JSON.toJSONStringWithDateFormat(date, "yy-mm-dd");
+        System.out.println(dateStr2);
     }
 }
